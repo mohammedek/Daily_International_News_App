@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "52367554747",
+    "project_id": "news-reader-app-dd490",
+    "storage_bucket": "news-reader-app-dd490.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52367554747:android:72a6ce4ac911159809119e",
+        "android_client_info": {
+          "package_name": "com.example.news_reader_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "52367554747-44c72b4n27qu7nkt15l8vr423h4gjuk1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.news_reader_app",
+            "certificate_hash": "78be7a995bbd11a743049e0165a10daf483c25b7"
+          }
+        },
+        {
+          "client_id": "52367554747-002n992iqftn0m80s8hvn8hpc6mvit60.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7EVXP2k99NMiIpXkKyiKZ4j-WXoI_FHU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52367554747-002n992iqftn0m80s8hvn8hpc6mvit60.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "52367554747-haigegqippunq8figqqn1tlag6hpi49h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.newsReaderApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
