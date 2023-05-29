@@ -35,8 +35,21 @@ class LoginScreen extends StatelessWidget {
     }
   }
 
+  void _checkLoggedInUser(BuildContext context) {
+    final User? currentUser = _auth.currentUser;
+    if (currentUser != null) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) => HomeScreen(user: currentUser),
+        ),
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
+    _checkLoggedInUser(context);
     return Scaffold(
       body: Stack(
         children: [
@@ -110,7 +123,8 @@ class LoginScreen extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(
                         vertical: 10.0,
                         horizontal: 20.0,
-                      ), backgroundColor: Colors.redAccent,
+                      ),
+                      backgroundColor: Colors.redAccent,
                       textStyle: const TextStyle(
                         fontSize: 18.0,
                         fontWeight: FontWeight.bold,

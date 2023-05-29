@@ -6,11 +6,7 @@ import 'package:news_reader_app/src/screens/login_screen.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Initialize Firebase
   await Firebase.initializeApp();
-
-  // Enable Firebase Authentication persistence
-  await FirebaseAuth.instance.setPersistence(Persistence.LOCAL);
 
   runApp(const NewsReaderApp());
 }
@@ -21,6 +17,7 @@ class NewsReaderApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'News Reader',
       // theme: appTheme,
       home: LoginScreen(),
